@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>thuc hanh tong quan js</title>
+</head>
+<body>
+<button onclick="showMessage();">click Me!</button>
+<script>
+    function showMessage(){
+        alert('Xin chào!');
+    }
+</script>
+<div id="messageDiv"></div>
+<button onclick="showMessage2();">Click Me2!</button>
+<script>
+    function showMessage2(){
+        document.getElementById('messageDiv').innerHTML = 'Xin chào!';
+    }
+</script>
+<div id="messageDiv1"></div>
+<button onclick="showMessage3()">Click Me3!</button>
+<script>
+    function showMessage3() {
+        document.write('Xin chao!');
+    }
+</script>
+<div id="messageDiv2"></div>
+<button onclick="showMessage4()">Click Me4!</button>
+<script>
+    function showMessage4() {
+        console.log('xin chao!')
+    }
+</script>
+</body>
+</html>
